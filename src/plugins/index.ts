@@ -1,0 +1,1 @@
+export { setupAssets } from "./assets";
