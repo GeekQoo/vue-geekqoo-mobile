@@ -2,6 +2,8 @@ import type { ConfigEnv, UserConfigExport } from "vite";
 import { loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 import unocss from "unocss/vite";
+import Components from "unplugin-vue-components/vite";
+import { VantResolver } from "unplugin-vue-components/resolvers";
 import autoprefixer from "autoprefixer";
 import pxtorem from "postcss-pxtorem";
 
@@ -10,7 +12,15 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     const viteEnv = loadEnv(mode, process.cwd());
 
     return {
-        plugins: [vue(), unocss()],
+        plugins: [
+            vue(),
+            unocss(),
+            Components({
+                resolvers: [VantResolver()],
+                extensions: ["vue", "tsx"],
+                dts: "./types/components.d.ts"
+            })
+        ],
         base: viteEnv.VITE_BASE_PATH, // 开发或生产环境服务的公共基础路径。
         publicDir: "public", // 作为静态资源服务的文件夹。
         resolve: {
