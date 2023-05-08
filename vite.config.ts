@@ -30,6 +30,8 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
                 vueTemplate: true // 是否在Vue模板中自动导入
             }),
             Components({
+                dirs: ["src/components/Global"],
+                extensions: ["vue", "tsx"],
                 resolvers: [VantResolver()],
                 dts: "./types/components.d.ts"
             })

@@ -20,7 +20,7 @@ service.interceptors.response.use(
         return response;
     },
     (error) => {
-        checkStatus(error?.response?.status || null);
+        checkStatus(error?.response?.status);
         return Promise.reject(error.response);
     }
 );
