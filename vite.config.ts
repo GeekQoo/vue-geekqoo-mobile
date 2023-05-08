@@ -2,6 +2,7 @@ import type { ConfigEnv, UserConfigExport } from "vite";
 import { loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 import unocss from "unocss/vite";
+import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { VantResolver } from "unplugin-vue-components/resolvers";
 import autoprefixer from "autoprefixer";
@@ -15,9 +16,21 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
         plugins: [
             vue(),
             unocss(),
+            AutoImport({
+                imports: [
+                    // 预设
+                    "vue",
+                    "vue-router",
+                    // 自定义
+                    {
+                        vant: ["showToast", "showDialog ", "showNotify ", "showImagePreview "]
+                    }
+                ],
+                dts: "./types/auto-imports.d.ts",
+                vueTemplate: true // 是否在Vue模板中自动导入
+            }),
             Components({
                 resolvers: [VantResolver()],
-                extensions: ["vue", "tsx"],
                 dts: "./types/components.d.ts"
             })
         ],

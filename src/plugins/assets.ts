@@ -1,8 +1,10 @@
 // 全局样式
 import "uno.css";
 import "@/styles/global.scss";
+
 // rem配置
 import "@/utils/rem";
+
 // vant样式
 import "vant/es/toast/style";
 import "vant/es/dialog/style";
