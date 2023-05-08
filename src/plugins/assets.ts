@@ -1,5 +1,6 @@
 // 全局样式
 import "uno.css";
+import "@/styles/normalize.scss";
 import "@/styles/global.scss";
 
 // rem配置
