@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vicons/antd': ^0.12.0
-  '@vicons/fluent': ^0.12.0
   '@vitejs/plugin-vue': ^4.1.0
   '@vueuse/core': ^10.0.2
   autoprefixer: ^10.4.14
@@ -23,11 +22,9 @@ specifiers:
   vue: ^3.2.47
   vue-router: ^4.1.6
   vue-tsc: ^1.2.0
-  vuedraggable: ^4.1.0
 
 dependencies:
   '@vicons/antd': 0.12.0
-  '@vicons/fluent': 0.12.0
   '@vueuse/core': 10.0.2_vue@3.2.47
   axios: 1.3.5
   dayjs: 1.11.7
@@ -36,7 +33,6 @@ dependencies:
   vant: 4.2.0_vue@3.2.47
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
-  vuedraggable: 4.1.0_vue@3.2.47
 
 devDependencies:
   '@vitejs/plugin-vue': 4.1.0_vite@4.2.1+vue@3.2.47
@@ -625,10 +621,6 @@ packages:
 
   /@vicons/antd/0.12.0:
     resolution: {integrity: sha512-C0p6aO1EmGG1QHrqgUWQS1No20934OdWSRQshM5NIDK5H1On6tC26U0hT6Rmp40KfUsvhvX5YW8BoWJdNFifPg==}
-    dev: false
-
-  /@vicons/fluent/0.12.0:
-    resolution: {integrity: sha512-ATCiqPuiJ6RI5GBlD3BIpZ9Xw4MsCA4RpI5oR6MCti4quS4mX1Gp6N74FCzw7lgOj+80rV4HMKhZTVInwimpVQ==}
     dev: false
 
   /@vitejs/plugin-vue/4.1.0_vite@4.2.1+vue@3.2.47:
@@ -1805,10 +1797,6 @@ packages:
       totalist: 3.0.0
     dev: true
 
-  /sortablejs/1.14.0:
-    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
-    dev: false
-
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -2164,15 +2152,6 @@ packages:
       '@vue/runtime-dom': 3.2.47
       '@vue/server-renderer': 3.2.47_vue@3.2.47
       '@vue/shared': 3.2.47
-
-  /vuedraggable/4.1.0_vue@3.2.47:
-    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==}
-    peerDependencies:
-      vue: ^3.0.1
-    dependencies:
-      sortablejs: 1.14.0
-      vue: 3.2.47
-    dev: false
 
   /watchpack/2.4.0:
     resolution: {integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==}
