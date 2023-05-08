@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "esnext", // 指定ECMAScript目标版本
-        "module": "esnext", // 指定生成哪个模块系统代码
+        "target": "ESNext", // 指定ECMAScript目标版本
+        "module": "ESNext", // 指定生成哪个模块系统代码
         "strict": true, // 启用所有严格类型检查选项。
         "jsx": "preserve", // 支持jsx语法
         "importHelpers": true, // 从 tslib 导入辅助工具函数（比如 __extends， __rest等）
@@ -16,7 +16,7 @@
         "paths": {
             "@/*": ["src/*"]
         },
-        "lib": ["esnext", "dom", "dom.iterable", "scripthost"] // 编译过程中需要引入的库文件的列表。
+        "lib": ["ESNext", "dom", "dom.iterable", "scripthost"] // 编译过程中需要引入的库文件的列表。
     },
     // 解析的文件
     "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.ts", "types/**/*.tsx", "vite.config.ts"],

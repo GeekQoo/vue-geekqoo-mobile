@@ -20,5 +20,9 @@ export default defineConfig({
         "fixed-br": "fixed right-0 bottom-0",
         "transition-base": "transition-all duration-300 ease-in-out",
         "wh-screen": "w-screen h-screen"
-    }
+    },
+    safelist: [
+        // @ts-ignore wh-1px ~ wh-1000px
+        ...Array.from({ length: 1000 }, (item, index) => `wh-${index + 1}px`)
+    ]
 });

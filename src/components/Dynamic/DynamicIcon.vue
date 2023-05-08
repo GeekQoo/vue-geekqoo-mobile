@@ -1,11 +1,12 @@
 <template>
-    <div :style="[`width:${size}px`, `height:${size}px`, `color:${color}`]">
-        <component class="block" :is="iconComponent" />
+    <div :class="`wh-${size}px`" :style="`color:${color}`">
+        <component :is="iconComponent" class="block" />
     </div>
 </template>
 
 <script lang="ts" setup>
 import * as icons from "@vicons/antd";
+import { computed } from "vue";
 
 let props = withDefaults(
     defineProps<{
@@ -19,5 +20,5 @@ let props = withDefaults(
     }
 );
 
-let iconComponent = (icons as UnKnownObject)[props.name];
+let iconComponent = computed(() => (icons as UnKnownObject)[props.name]);
 </script>
