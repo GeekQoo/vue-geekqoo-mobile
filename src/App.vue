@@ -1,5 +1,7 @@
 <template>
-    <router-view />
+    <VantProvider>
+        <router-view />
+    </VantProvider>
 </template>
 
 <script lang="ts" setup></script>

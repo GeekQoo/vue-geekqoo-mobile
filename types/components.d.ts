@@ -12,5 +12,8 @@ declare module '@vue/runtime-core' {
     DynamicIcon: typeof import('./../src/components/Dynamic/DynamicIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VanButton: typeof import('vant/es')['Button']
+    VanConfigProvider: typeof import('vant/es')['ConfigProvider']
+    VantProvider: typeof import('./../src/components/System/VantProvider/VantProvider.vue')['default']
   }
 }
