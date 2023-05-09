@@ -35,16 +35,24 @@
                 </div>
             </div>
             <a class="block mt-15px text-right text-14px color-[var(--van-gray-6)]">忘记密码？</a>
-            <van-button block class="mt-40px!" type="primary">登录</van-button>
+            <van-button block class="mt-40px!" loading-type="spinner" to="" type="primary" @click="onLogin">
+                登录
+            </van-button>
             <a class="block mt-20px text-center text-16px color-[var(--van-primary-color)]">使用账号密码登录</a>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
+watchEffect(() => {
+    console.log(useRoute().name);
+});
+
 let showPassword = ref(false);
 
 let changeShowPassword = () => {
     showPassword.value = !showPassword.value;
 };
+
+let onLogin = () => {};
 </script>
