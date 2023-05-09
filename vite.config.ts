@@ -23,6 +23,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
                     "vue-router",
                     // 自定义
                     {
+                        "@/store": ["useStoreUser", "useStoreDesign"],
                         vant: ["showToast", "showDialog ", "showNotify ", "showImagePreview "]
                     }
                 ],

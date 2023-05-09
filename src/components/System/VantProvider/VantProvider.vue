@@ -1,10 +1,12 @@
 <template>
-    <van-config-provider theme="light">
+    <van-config-provider :theme="storeDesign.currentTheme">
         <slot name="default" />
     </van-config-provider>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+let storeDesign = useStoreDesign();
+</script>
 
 <style lang="scss">
 .van-theme-dark {
