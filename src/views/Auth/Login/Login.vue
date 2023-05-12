@@ -38,7 +38,7 @@
             <van-button block class="mt-40px!" loading-type="spinner" to="" type="primary" @click="onLogin">
                 登录
             </van-button>
-            <a class="block mt-20px text-center text-16px color-[var(--van-primary-color)]">使用账号密码登录</a>
+            <a class="block mt-20px text-center text-16px color-[var(--van-primary-color)]">使用短信验证码登录</a>
         </div>
     </div>
 </template>

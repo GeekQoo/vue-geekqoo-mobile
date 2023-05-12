@@ -1,8 +1,6 @@
-import { useRoute, useRouter } from "vue-router";
-
 export function usePublic() {
-    const $route = useRoute();
-    const $router = useRouter();
+    let $route = useRoute();
+    let $router = useRouter();
 
     return {
         $route,

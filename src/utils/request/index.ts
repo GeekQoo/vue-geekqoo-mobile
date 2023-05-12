@@ -15,16 +15,14 @@ service.interceptors.request.use(
 );
 
 // 响应类型
-interface RequestResProps<T = UnKnownObject> {
+interface ResponseProps<T = UnKnownObject> {
     code: number;
     data?: T;
-    errCode?: Nullable<number>;
-    errMsg?: Nullable<string>;
 }
 
 // 响应拦截
 service.interceptors.response.use(
-    (response: AxiosResponse<RequestResProps>) => response,
+    (response: AxiosResponse<ResponseProps>) => response,
     (error) => {
         checkStatus(error?.response?.status);
         return Promise.reject(error.response);
@@ -36,7 +34,7 @@ export function httpRequest(
     url: string,
     method: Method,
     config?: UnKnownObject
-): Promise<AxiosResponse<RequestResProps>> {
+): Promise<AxiosResponse<ResponseProps>> {
     return service({
         url,
         method,

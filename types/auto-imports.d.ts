@@ -44,9 +44,9 @@ declare global {
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
-  const showDialog : typeof import('vant')['showDialog ']
-  const showImagePreview : typeof import('vant')['showImagePreview ']
-  const showNotify : typeof import('vant')['showNotify ']
+  const showDialog: typeof import('vant')['showDialog']
+  const showImagePreview: typeof import('vant')['showImagePreview']
+  const showNotify: typeof import('vant')['showNotify']
   const showToast: typeof import('vant')['showToast']
   const toRaw: typeof import('vue')['toRaw']
   const toRef: typeof import('vue')['toRef']
@@ -57,6 +57,7 @@ declare global {
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useLink: typeof import('vue-router')['useLink']
+  const usePublic: typeof import('@/hooks')['usePublic']
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
   const useSlots: typeof import('vue')['useSlots']
@@ -116,9 +117,9 @@ declare module 'vue' {
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
-    readonly showDialog : UnwrapRef<typeof import('vant')['showDialog ']>
-    readonly showImagePreview : UnwrapRef<typeof import('vant')['showImagePreview ']>
-    readonly showNotify : UnwrapRef<typeof import('vant')['showNotify ']>
+    readonly showDialog: UnwrapRef<typeof import('vant')['showDialog']>
+    readonly showImagePreview: UnwrapRef<typeof import('vant')['showImagePreview']>
+    readonly showNotify: UnwrapRef<typeof import('vant')['showNotify']>
     readonly showToast: UnwrapRef<typeof import('vant')['showToast']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
@@ -129,6 +130,7 @@ declare module 'vue' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
+    readonly usePublic: UnwrapRef<typeof import('@/hooks')['usePublic']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
