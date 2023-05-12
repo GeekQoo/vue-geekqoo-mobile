@@ -24,7 +24,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
                     // 自定义
                     {
                         "@/store": ["useStoreUser", "useStoreDesign"],
-                        vant: ["showToast", "showDialog ", "showNotify ", "showImagePreview "]
+                        vant: ["showToast", "showDialog", "showNotify", "showImagePreview"]
                     }
                 ],
                 dts: "./types/auto-imports.d.ts",

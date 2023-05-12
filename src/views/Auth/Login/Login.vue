@@ -44,10 +44,6 @@
 </template>
 
 <script lang="ts" setup>
-watchEffect(() => {
-    console.log(useRoute().name);
-});
-
 let showPassword = ref(false);
 
 let changeShowPassword = () => {

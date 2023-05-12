@@ -1,6 +1,10 @@
 // 错误提示
-const errorMessage = (message: string) => {
-    console.log(message);
+let errorMessage = (message: string) => {
+    showNotify({
+        type: "danger",
+        message,
+        duration: 2000
+    });
 };
 
 export function checkStatus(status?: Nullable<number>, msg?: string) {
